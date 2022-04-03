@@ -7,13 +7,12 @@ using System.Threading.Tasks;
 
 namespace Inventory.Core.Entity
 {
-    public class Transaction:BaseModel
+    public class Transaction : BaseModel
 
     {
-        public int UserID { get; set; }
-        public int OrderID { get; set; }
-        public string Date { get; set; }
+        public Order Order { get; set; }
         public int TotalAmount { get; set; }
+        public string ChallanNo { get; set; }
 
 
     }
