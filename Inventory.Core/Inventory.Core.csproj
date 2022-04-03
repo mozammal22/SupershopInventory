@@ -51,10 +51,13 @@
     <Compile Include="Entity\Product.cs" />
     <Compile Include="Entity\Transaction.cs" />
     <Compile Include="Entity\User.cs" />
+    <Compile Include="Interfaces\Repositories\Base\IBaseRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICutomerRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
