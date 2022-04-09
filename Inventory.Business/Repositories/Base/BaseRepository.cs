@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Inventory.Business.Repositories
+namespace Inventory.Business.Repositories.Base
 {
     public class BaseRepository<T> : IBaseRepository<T> where T : BaseModel
     {
@@ -31,7 +31,6 @@ namespace Inventory.Business.Repositories
 
         public void Delete(T entity)
         {
-            entity.CreatedTime = DateTime.Now;
             context.Set<T>().Remove(entity);
         }
 
@@ -62,7 +61,7 @@ namespace Inventory.Business.Repositories
 
         public void Update(T entity)
         {
-            entity.CreatedTime = DateTime.Now;
+            entity.ModifiedTime = DateTime.Now;
             context.Set<T>().Update(entity);
         }
 
