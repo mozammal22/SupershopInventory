@@ -14,6 +14,6 @@ namespace Inventory.Core.Entity
         public int TotalAmount { get; set; }
         public string ChallanNo { get; set; }
 
-
+        public User User { get; set; }
     }
 }

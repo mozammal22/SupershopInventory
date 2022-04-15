@@ -10,6 +10,10 @@ namespace Inventory.Data.InventoryContext
 {
     public class InventoryDbContext : DbContext
     {
+        public InventoryDbContext(DbContextOptions<InventoryDbContext> options) : base(options)
+        {
+
+        }
         public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Product> Products { get; set; }
