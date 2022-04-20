@@ -8,8 +8,7 @@ using System.Threading.Tasks;
 
 namespace Inventory.Core.Interfaces.Repositories
 {
-    public interface ICashierRepository : IBaseRepository<Cashier>
+    public interface ICashierRepository :IBaseRepository<Cashier>
     {
-        void GenerateDiscountByCustomer(int cutomerId);
     }
 }

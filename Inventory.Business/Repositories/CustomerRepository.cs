@@ -1,5 +1,5 @@
 ﻿using Inventory.Business.Repositories.Base;
-//using Inventory.Core.Entity;
+using Inventory.Core.Entity;
 using Inventory.Core.Interfaces.Repositories;
 using Inventory.Data.InventoryContext;
 using System;
@@ -10,13 +10,18 @@ using System.Threading.Tasks;
 
 namespace Inventory.Business.Repositories
 {
-    public class UserRepository : BaseRepository<Inventory.Core.Entity.User>, IUserRepository
+    public class CustomerRepository : BaseRepository<Customer>, ICustomerRepository
     {
         private readonly InventoryDbContext context;
 
-        public UserRepository(InventoryDbContext _context) : base(_context)
+        public CustomerRepository(InventoryDbContext _context) : base(_context)
         {
             context = _context;
+        }
+
+        public void GenerateDiscountByCustomer(int cutomerId)
+        {
+            throw new NotImplementedException();
         }
     }
 }

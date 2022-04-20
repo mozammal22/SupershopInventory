@@ -8,14 +8,20 @@ using System.Threading.Tasks;
 
 namespace Inventory.Core.Entity
 {
-    public class Cashier : BaseModel
+    public class Cashier: BaseModel
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public string FullName { get; set; }
-        [EmailAddress(ErrorMessage = "Invalid Email Address")]
-        public string Email { get; set; }
-        [Required]
+
         public string PhoneNumber { get; set; }
+        public string Email { get; set; }
+        
+        public string Position { get; set; }
+        public int  Age { get; set; }
+        public string Gender { get; set; } 
+
+
+        
     }
 }

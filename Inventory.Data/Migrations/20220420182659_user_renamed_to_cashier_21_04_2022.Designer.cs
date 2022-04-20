@@ -4,14 +4,16 @@ using Inventory.Data.InventoryContext;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace Inventory.Data.Migrations
 {
     [DbContext(typeof(InventoryDbContext))]
-    partial class InventoryDbContextModelSnapshot : ModelSnapshot
+    [Migration("20220420182659_user_renamed_to_cashier_21_04_2022")]
+    partial class user_renamed_to_cashier_21_04_2022
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -58,7 +60,7 @@ namespace Inventory.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Cashiers");
+                    b.ToTable("Users");
                 });
 
             modelBuilder.Entity("Inventory.Core.Entity.Customer", b =>
@@ -92,7 +94,7 @@ namespace Inventory.Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Customers");
+                    b.ToTable("Cashiers");
                 });
 
             modelBuilder.Entity("Inventory.Core.Entity.Order", b =>

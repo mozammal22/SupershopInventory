@@ -172,6 +172,14 @@
     <Compile Include="Migrations\20220420180823_çustomer_renamed_to_cashier_21_04_2022.designer.cs">
       <DependentUpon>20220420180823_çustomer_renamed_to_cashier_21_04_2022.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20220420182659_user_renamed_to_cashier_21_04_2022.cs" />
+    <Compile Include="Migrations\20220420182659_user_renamed_to_cashier_21_04_2022.designer.cs">
+      <DependentUpon>20220420182659_user_renamed_to_cashier_21_04_2022.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\20220420182925_user_renamed_to_cashier_21_04_2022_122933.cs" />
+    <Compile Include="Migrations\20220420182925_user_renamed_to_cashier_21_04_2022_122933.designer.cs">
+      <DependentUpon>20220420182925_user_renamed_to_cashier_21_04_2022_122933.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\InventoryDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

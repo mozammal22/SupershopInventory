@@ -14,11 +14,11 @@ namespace Inventory.Data.InventoryContext
         {
 
         }
-        public DbSet<Cashier> Cashiers { get; set; }
+        public DbSet<Customer> Customers { get; set; }
         public DbSet<Order> Orders { get; set; }
         public DbSet<Product> Products { get; set; }
         public DbSet<Transaction> Transactions { get; set; }
-        public DbSet<User> Users { get; set; }
+        public DbSet<Cashier> Cashiers { get; set; }
     }
 
 

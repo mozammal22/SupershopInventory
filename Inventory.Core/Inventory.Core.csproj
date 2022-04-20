@@ -46,17 +46,17 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Entity\Base\BaseModel.cs" />
-    <Compile Include="Entity\Cashier.cs" />
+    <Compile Include="Entity\Customer.cs" />
     <Compile Include="Entity\Order.cs" />
     <Compile Include="Entity\Product.cs" />
     <Compile Include="Entity\Transaction.cs" />
-    <Compile Include="Entity\User.cs" />
+    <Compile Include="Entity\Cashier.cs" />
     <Compile Include="Interfaces\Repositories\Base\IBaseRepository.cs" />
-    <Compile Include="Interfaces\Repositories\ICashierRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICustomerRepository.cs" />
     <Compile Include="Interfaces\Repositories\IProductRepository.cs" />
     <Compile Include="Interfaces\Repositories\IOrderRepository.cs" />
     <Compile Include="Interfaces\Repositories\ITransactionRepository.cs" />
-    <Compile Include="Interfaces\Repositories\IUserRepository.cs" />
+    <Compile Include="Interfaces\Repositories\ICashierRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
