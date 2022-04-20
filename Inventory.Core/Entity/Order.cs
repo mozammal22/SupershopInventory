@@ -10,7 +10,7 @@ namespace Inventory.Core.Entity
     public class Order :BaseModel
     {
         public List<Product> Products { get; set; }
-        public Customer Customer { get; set; }
+        public Cashier Cashier { get; set; }
         //public int Quantity { get; set; }
         public int Price { get; set; }
     }

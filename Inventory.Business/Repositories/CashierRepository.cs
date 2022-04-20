@@ -10,11 +10,11 @@ using System.Threading.Tasks;
 
 namespace Inventory.Business.Repositories
 {
-    public class CustomerRepository : BaseRepository<Customer>, ICutomerRepository
+    public class CashierRepository : BaseRepository<Cashier>, ICashierRepository
     {
         private readonly InventoryDbContext context;
 
-        public CustomerRepository(InventoryDbContext _context) : base(_context)
+        public CashierRepository(InventoryDbContext _context) : base(_context)
         {
             context = _context;
         }

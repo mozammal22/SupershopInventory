@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Inventory.Core.Entity
 {
-    public class Customer : BaseModel
+    public class Cashier : BaseModel
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }

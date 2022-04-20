@@ -168,6 +168,10 @@
     <Compile Include="Migrations\20220415181637_transaction_table_updated_16_04_2022.designer.cs">
       <DependentUpon>20220415181637_transaction_table_updated_16_04_2022.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\20220420180823_çustomer_renamed_to_cashier_21_04_2022.cs" />
+    <Compile Include="Migrations\20220420180823_çustomer_renamed_to_cashier_21_04_2022.designer.cs">
+      <DependentUpon>20220420180823_çustomer_renamed_to_cashier_21_04_2022.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\InventoryDbContextModelSnapshot.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
